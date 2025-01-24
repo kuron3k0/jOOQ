@@ -60,7 +60,7 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v4
       with:
-        java-version: "17"  
+        java-version: "21"  
         distribution: "oracle"
     - name: Display JDK Path
       run: |
@@ -71,6 +71,7 @@ jobs:
         mvn -v
         cat /home/runner/.m2/toolchains.xml
         cat /home/runner/.m2/settings.xml
+        rm -rf /home/runner/.m2/repository
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
