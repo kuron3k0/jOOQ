@@ -63,7 +63,7 @@ jobs:
         java-version: "17"  
         distribution: "oracle"
     - name: Setup Maven
-      uses: s4u/setup-maven-action@v1
+      uses: s4u/setup-maven-action@v1.18.0
       with:
         java-version: "17"
         maven-version: "3.9.9"
